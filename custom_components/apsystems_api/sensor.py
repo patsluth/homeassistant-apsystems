@@ -94,7 +94,7 @@ SENSORS = {
 SCAN_INTERVAL = timedelta(minutes=1)
 _LOGGER = logging.getLogger(__name__)
 
-DOMAIN = "apsystems"
+DOMAIN = "apsystems_api"
 
 offset_hours = (8 * 60 * 60 * 1000) - (time.localtime().tm_gmtoff * 1000)
 _LOGGER.debug("Offset set to : "+ str(offset_hours/(60*60*1000)) + " hours")
